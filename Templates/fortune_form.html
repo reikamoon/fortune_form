@@ -1,14 +1,12 @@
 <html>
 <h1> ~Fortune Form~ </h1>
 <!-- By Reikamoon -->
-  <form action = '/results' method = 'GET'>
+  <form action = '/fortune_results' method = 'GET'>
     What is your name?
   <input type = 'text' name = 'firstname'>
-  <br>
   <input type ='submit' value = 'Submit'>
   <br>
   <br>
-  <form action = '/results' method = 'GET'>
     What is your sex?
     <br>
     <select>
@@ -17,23 +15,17 @@
     </select>
     <br>
     <br>
-  <form action="/results" method = 'GET'>
     When is your birthday?
   <input type="date" name="bday">
-  <br>
   <input type="submit" value = 'Submit'>
-</form>
-</form>
-  <form action = '/results.' method = 'GET'>
+  <br>
+  <br>
     What is your favorite Blue Lion?
-    <br>
     <br>
   <input type = 'radio' name = "Fave Blue Lion" value = "Dimitri">Dimitri<br>
   <input type = 'radio' name = "Fave Blue Lion" value = "Felix">Felix<br>
   <input type = 'radio' name = "Fave Blue Lion" value = "Mercedes">Mercedes<br>
   <br>
-</form>
-<form action = '/results' method = 'GET'>
   Who on this list is your favorite?
   <br>
   <select>
@@ -44,10 +36,9 @@
     <option value="Groh">Grøh</option>
     <option value="Dimitri">Dimitri</option>
   </select>
-
+  <br>
 <br>
-</form>
-<form action = '/results' method = 'GET'>
+
   Who do you like to play as in SoulCalibur VI?
   <br>
   <input type = 'radio' name = "sc6character" value = "Mitsurugi">Mitsurugi<br>
@@ -55,20 +46,16 @@
   <input type = 'radio' name = "sc6character" value = "Nightmare">Nightmare<br>
   <input type = 'radio' name = "sc6character" value = "Xianghua">Xianghua<br>
   <input type = 'radio' name = "sc6character" value = "Groh">Grøh<br>
+  <br>
 
-</form>
-  <form action = '/results' method = 'GET'>
     Which routes have you played?
     <br>
-    <br>
-    <form>
   <input type="checkbox" name="route" value="Crimson Flower"> Crimson Flower<br>
   <input type="checkbox" name="route" value="Azure Moon"> Azure Moon (Best)<br>
   <input type="checkbox" name="route" value="Verdant Wind"> Verdant Wind<br>
   <input type="checkbox" name="route" value="Silver Snow"> Silver Snow<br>
-</form>
 <br>
-<form>
+
   Select your favorite color:
   <br>
   <input type="color" name="Teal" value = "#84F2E8">
@@ -80,20 +67,19 @@
   <input type="color" name="Crimson" value="#D51010">
   <input type="color" name="Golden" value="#E9CE0D">
   <input type="color" name="Silver" value="#D3D3D3">
-</form>
-<form action = '/results' method = 'GET'>
+  <br>
+  <br>
   Which character do you resonate with most?
   <br>
-  <input type = 'radio' name = "chara" value = "Seliph">Seliph<br>
-  <input type = 'radio' name = "chara" value = "Groh">Grøh<br>
-  <input type = 'radio' name = "chara" value = "Dimitri">Dimitri<br>
-  <input type = 'radio' name = "chara" value = "Fuyumi">Fuyumi<br>
-  <input type = 'radio' name = "chara" value = "Minerva">Minerva<br>
-  <input type = 'radio' name = "chara" value = "Reiko">Reiko<br>
-</form>
+  <input type = 'radio' name = "chara" id = "Seliph" value ="Seliph">Seliph<br>
+  <input type = 'radio' name = "chara" value ="Groh">Grøh<br>
+  <input type = 'radio' name = "chara" value ="Dimitri">Dimitri<br>
+  <input type = 'radio' name = "chara" value ="Fuyumi">Fuyumi<br>
+  <input type = 'radio' name = "chara" value ="Minerva">Minerva<br>
+  <input type = 'radio' name = "chara" value ="Reiko">Reiko<br>
+
 <br>
 <br>
-<form action="/fortune_results" >
   <button type="submit">Submit</button>
 </form>
 </html>

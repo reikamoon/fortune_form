@@ -6,18 +6,26 @@ app = Flask(__name__)
 def show_form():
     return render_template('fortune_form.html')
 
-@app.route('/fortune_results')
+@app.route('/fortune_results', methods=['GET'])
 def show_results():
     name = request.args.get('name')
     chara = request.args.get('chara')
     favebluelion = request.args.get('Fave Blue Lion')
     sc6character = request.args.get('sc6character')
+    print("Test Chara")
+    print(chara)
     if chara == "Seliph":
-        print("~Seliph's Fortune~")
-        print("You follow the shadows of those before you, and constantly worry")
-        print("about whether you'll be able to live up to the greatness of others.")
-    return render_template('results.html')
-
+        return render_template('seliph.html')
+    if chara == "Dimitri":
+        return render_template('dimitri.html')
+    if chara == "Groh":
+        return render_template('groh.html')
+    if chara == "Fuyumi":
+        return render_template('fuyumi.html')
+    if chara == "Minerva":
+        return render_template('minerva.html')
+    if chara == "Reiko":
+        return render_template('reiko.html')
 
 
 if __name__ == '__main__':
