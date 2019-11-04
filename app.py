@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def show_form():
-    return render_template('index.html')
+    return render_template('fortune_form.html')
 
 @app.route('/fortune_results')
 def show_results():
