@@ -12,8 +12,6 @@ def show_results():
     chara = request.args.get('chara')
     favebluelion = request.args.get('Fave Blue Lion')
     sc6character = request.args.get('sc6character')
-    print("Test Chara")
-    print(chara)
     if chara == "Seliph":
         return render_template('seliph.html')
     if chara == "Dimitri":
